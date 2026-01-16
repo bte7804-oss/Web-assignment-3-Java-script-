@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - MLU vintages</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body bgcolor="Gray">
+<header>
+    <h1>Place Your Order Here!!!</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="shop.html">Shop</a> |
+        <a href="order.html">Order</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<section>
+    <h2>Order Form</h2>
+    <form>
+        <h3>Select Jewelry Items:</h3>
+        <p>(Choose as many as you like)</p>
+        <input type="checkbox" id="pearl" name="jewelry" value="pearl">
+        <label for="pearl">Pearl Necklace - 3500 ETB</label><br>
+        <input type="checkbox" id="bracelet" name="jewelry" value="bracelet">
+        <label for="bracelet">Vintage Gold Bracelet - 1500 ETB</label><br>
+        <input type="checkbox" id="ring" name="jewelry" value="ring">
+        <label for="ring">Antique Ring - 500 ETB</label><br>
+        <input type="checkbox" id="mystery" name="jewelry" value="mystery">
+        <label for="mystery">Mystery Jewelry Jar - 1500 ETB</label><br>
+        <input type="checkbox" id="emerald" name="jewelry" value="emerald">
+        <label for="emerald">Emerald Drop Earrings - 800 ETB</label><br>
+        <input type="checkbox" id="ruby" name="jewelry" value="ruby">
+        <label for="ruby">Ruby Heart Pendant - 800 ETB</label><br>
+        <input type="checkbox" id="silver_set" name="jewelry" value="silver_set">
+        <label for="silver_set">Sterling Silver Ring Set - 2000 ETB</label><br>
+        <input type="checkbox" id="rose_gold" name="jewelry" value="rose_gold">
+        <label for="rose_gold">Rose Gold Charm Bracelet - 950 ETB</label><br>
+        <input type="checkbox" id="locket" name="jewelry" value="locket">
+        <label for="locket">Vintage Photo Locket Necklace - 500 ETB</label><br>
+        <input type="checkbox" id="brooch" name="jewelry" value="brooch">
+        <label for="brooch">Antique Floral Brooch - 850 ETB</label><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" Placeholder="+251xxxxxxxxx" required><br><br>
+        <label>Delivery Location:</label><br>
+        <input type="text" name="location" required><br><br>
+        <label>Delivery Fee (ETB):</label><br>
+        <input type="text" name="Fee" placeholder="200/1500" required><br>
+        <ul>
+            <li>200ETB for anywhere in A.A</li> 
+            <li>1500ETB for anywhere outside of A.A</li>
+        </ul>
+
+        <p>How would you like to pay?</p>
+        <input type="radio" id="Transfer" name="payment" value="Transfer" required>
+        <label for="Transfer">Transfer on delivery</label><br>
+        <input type="radio" id="delivery" name="payment" value="delivery">
+        <label for="delivery">Cash on Delivery</label><br><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; MLU vintages</p>
+</footer>
+</body>
+</html>
