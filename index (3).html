@@ -41,5 +41,44 @@
 <footer>
 <p>&copy; MLU vintages</p>
 </footer>
+<script>
+  
+  window.addEventListener('load', () => {
+    alert("🎁 Surprise! Check out our monthly vintage-themed giveaways!");
+  });
+
+  
+  const images = document.querySelectorAll('.images-text-container img');
+  images.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      img.style.transform = 'scale(1.1)';
+      img.style.transition = 'transform 0.3s ease';
+    });
+    img.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1)';
+    });
+  });
+
+
+  const footer = document.querySelector('footer p');
+  const year = new Date().getFullYear();
+  footer.innerHTML = 
+&copy; MLU vintages ${year}
+;
+
+
+  const header = document.querySelector('header h1');
+  header.addEventListener('mouseenter', () => {
+    header.style.color = '#F5E1A7';
+    header.style.textShadow = '2px 2px 8px #FFD700';
+    header.style.transition = 'all 0.3s ease';
+  });
+  header.addEventListener('mouseleave', () => {
+    header.style.color = '#F5F1E7';
+    header.style.textShadow = 'none';
+  });
+    </script>
+  
 </body>
 </html>
+
