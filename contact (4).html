@@ -35,5 +35,26 @@
 <footer>
 <p>&copy; MLU Vintages</p>
 </footer>
+  <script>
+   
+    const footer = document.querySelector('footer p');
+    const year = new Date().getFullYear();
+    footer.innerHTML = 
+&copy; MLU vintages ${year}
+;
+
+   
+    const header = document.querySelector('header h1');
+    header.addEventListener('mouseenter', () => {
+        header.style.color = '#F5E1A7';
+        header.style.textShadow = '2px 2px 8px #FFD700';
+        header.style.transition = 'all 0.3s ease';
+    });
+    header.addEventListener('mouseleave', () => {
+        header.style.color = '#F5F1E7';
+        header.style.textShadow = 'none';
+    });
+  </script>
 </body>
 </html>
+
